@@ -1,5 +1,254 @@
-<html>
-  <body>
-  <script async src="//jsfiddle.net/walkingwithcode/ashrgtbq/embed/result/"></script> 
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Covid-19 Summary Report</title>
+<script src="/js/sort-table.js"></script>
+<link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+<div>
+<h1>EU/EEA and UK Summary Report</h1>
+<p>This report was inspired by the summary table in the ECDC Report: 
+    <a href="https://www.ecdc.europa.eu/en/cases-2019-ncov-eueea">COVID-19 situation update for the EU/EEA and the UK</a>.
+</p>
+
+<p>
+    Data imported from the <a href="https://opendata.ecdc.europa.eu/covid19/casedistribution/csv">official ECDC csv source</a>.
+</p>
+
+<h2>As of Tuesday 08 September 2020</h2>
+
+<!-- Dataframe Table -->
+<table border="1" class="dataframe js-sort-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>EU/EEA and the UK</th>
+      <th class="js-sort-number">Cases</th>
+      <th class="js-sort-number">Deaths</th>
+      <th class="js-sort-number">14-day Cases per 100k</th>
+      <th class="js-sort-number">14-day Deaths per 100k</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spain</td>
+      <td>525549</td>
+      <td>29516</td>
+      <td>255.9</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>United_Kingdom</td>
+      <td>350100</td>
+      <td>41554</td>
+      <td>35.2</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>France</td>
+      <td>328980</td>
+      <td>30726</td>
+      <td>125.5</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>Italy</td>
+      <td>278784</td>
+      <td>35553</td>
+      <td>30.6</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Germany</td>
+      <td>252298</td>
+      <td>9329</td>
+      <td>21.0</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Romania</td>
+      <td>95897</td>
+      <td>3926</td>
+      <td>85.3</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <td>Belgium</td>
+      <td>88675</td>
+      <td>9909</td>
+      <td>50.5</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>Sweden</td>
+      <td>85558</td>
+      <td>5837</td>
+      <td>23.0</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Netherlands</td>
+      <td>75512</td>
+      <td>6234</td>
+      <td>48.9</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>Poland</td>
+      <td>71126</td>
+      <td>2124</td>
+      <td>23.2</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Portugal</td>
+      <td>60507</td>
+      <td>1843</td>
+      <td>46.6</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Austria</td>
+      <td>29875</td>
+      <td>746</td>
+      <td>48.9</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Ireland</td>
+      <td>29774</td>
+      <td>1777</td>
+      <td>33.8</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Czechia</td>
+      <td>28716</td>
+      <td>437</td>
+      <td>61.4</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Denmark</td>
+      <td>18113</td>
+      <td>628</td>
+      <td>29.6</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Bulgaria</td>
+      <td>17146</td>
+      <td>677</td>
+      <td>25.1</td>
+      <td>1.9</td>
+    </tr>
+    <tr>
+      <td>Croatia</td>
+      <td>12081</td>
+      <td>201</td>
+      <td>92.5</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>Greece</td>
+      <td>11663</td>
+      <td>289</td>
+      <td>26.5</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>Norway</td>
+      <td>11387</td>
+      <td>264</td>
+      <td>20.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Hungary</td>
+      <td>8963</td>
+      <td>625</td>
+      <td>38.6</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Finland</td>
+      <td>8327</td>
+      <td>336</td>
+      <td>7.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Luxembourg</td>
+      <td>6950</td>
+      <td>124</td>
+      <td>-137.5</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Slovakia</td>
+      <td>4636</td>
+      <td>37</td>
+      <td>22.2</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Slovenia</td>
+      <td>3190</td>
+      <td>130</td>
+      <td>25.2</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Lithuania</td>
+      <td>3100</td>
+      <td>86</td>
+      <td>15.3</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Estonia</td>
+      <td>2532</td>
+      <td>64</td>
+      <td>19.4</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Iceland</td>
+      <td>2143</td>
+      <td>10</td>
+      <td>19.6</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Malta</td>
+      <td>2076</td>
+      <td>15</td>
+      <td>82.9</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Cyprus</td>
+      <td>1510</td>
+      <td>21</td>
+      <td>6.7</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Latvia</td>
+      <td>1429</td>
+      <td>35</td>
+      <td>4.8</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Liechtenstein</td>
+      <td>108</td>
+      <td>1</td>
+      <td>18.2</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</body>
 </html>
